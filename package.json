@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "Rap Album Review Angular Demo",
   "private": true,
   "version": "0.0.0",
   "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/madblkman/Rap_Album_Review_Angular_Demo",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
