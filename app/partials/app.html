@@ -1,0 +1,37 @@
+<div ng-controller='musicReviewController'>
+
+  <section id='nav'>
+    <nav-menu></nav-menu>
+  </section> <!-- end of nav -->
+
+  <section id="addAlbum" style='margin-bottom: 20px'>
+    <album-form></album-form>
+  </section>
+
+  <hr class="col-md-10 col-md-offset-1"/>
+
+  <section id='mainContainer'>
+    <div class='container-fluid'>
+      <div class='col-md-10 col-md-offset-1'>
+
+        <ul class='list-unstyled col-sm-8'>
+          <li class='row' ng-repeat='album in albums'>
+            <album-cover></album-cover>
+            <div class="col-sm-8">
+              <h3>{{ album.title }}</h3>
+              <h6> - {{ album.artist }}</h6>
+              <p>{{ album.review }}</p>
+              <ul class='list-unstyled'>
+                <li ng-repeat='(key, value) in album.genres' ng-show='value'>
+                  <span class="label label-primary">{{ key }}</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section> <!-- end of mainContainer -->
+
+</div> <!-- end of controller -->
